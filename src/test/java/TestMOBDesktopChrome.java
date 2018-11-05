@@ -1,6 +1,6 @@
 import java.io.File;
 import java.io.IOException;
-
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Proxy;
@@ -18,6 +18,7 @@ import org.testng.annotations.Test;
 import net.lightbody.bmp.BrowserMobProxyServer;
 import net.lightbody.bmp.client.ClientUtil;
 import net.lightbody.bmp.core.har.Har;
+import net.lightbody.bmp.core.har.HarEntry;
 import net.lightbody.bmp.proxy.CaptureType;
 
 public class TestMOBDesktopChrome {
@@ -70,7 +71,10 @@ public class TestMOBDesktopChrome {
 	driver.findElement(By.id("headersearch")).sendKeys("Credit Cards");
 		
 	
-	driver.findElement(By.xpath("//a/span[./text()='credit cards']")).click();
+	//driver.findElement(By.xpath("//a/span[./text()='credit cards']")).click();
+	
+//	Thread.sleep(8000);
+
 	}
 		catch(Exception e) {
 			e.printStackTrace();
@@ -82,6 +86,14 @@ public class TestMOBDesktopChrome {
 		
 		Har har = proxy.getHar();
 
+		
+		List<HarEntry> entries = har.getLog().getEntries();
+		
+		
+		for (HarEntry entry : entries) {
+		System.out.println(entry.getRequest().getBodySize());
+		
+		
 		// Write HAR Data in a File
 		File harFile = new File(sFileName);
 		try {
@@ -92,10 +104,10 @@ public class TestMOBDesktopChrome {
 		}
 		
 		if (driver != null) {
-			proxy.stop();
+			//proxy.stop();
 			driver.quit();
 		}
 	}
 }
-
+}
 

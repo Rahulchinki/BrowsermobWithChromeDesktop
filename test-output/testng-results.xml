@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="31362" started-at="2018-11-02T19:48:50Z" finished-at="2018-11-02T19:49:22Z">
+  <suite name="Default suite" duration-ms="17936" started-at="2018-11-05T18:29:44Z" finished-at="2018-11-05T18:30:02Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="31362" started-at="2018-11-02T19:48:50Z" finished-at="2018-11-02T19:49:22Z">
+    <test name="Default test" duration-ms="17936" started-at="2018-11-05T18:29:44Z" finished-at="2018-11-05T18:30:02Z">
       <class name="TestMOBDesktopChrome">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestMOBDesktopChrome@17cd7a0]" name="setUp" is-config="true" duration-ms="23781" started-at="2018-11-02T19:48:50Z" finished-at="2018-11-02T19:49:14Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestMOBDesktopChrome@42a311]" name="setUp" is-config="true" duration-ms="11676" started-at="2018-11-05T18:29:44Z" finished-at="2018-11-05T18:29:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TestCaseOne()[pri:0, instance:TestMOBDesktopChrome@17cd7a0]" name="TestCaseOne" duration-ms="4441" started-at="2018-11-02T19:49:14Z" finished-at="2018-11-02T19:49:19Z">
+        <test-method status="PASS" signature="TestCaseOne()[pri:0, instance:TestMOBDesktopChrome@42a311]" name="TestCaseOne" duration-ms="4370" started-at="2018-11-05T18:29:56Z" finished-at="2018-11-05T18:30:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCaseOne -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:TestMOBDesktopChrome@17cd7a0]" name="TearDown" is-config="true" duration-ms="3114" started-at="2018-11-02T19:49:19Z" finished-at="2018-11-02T19:49:22Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:TestMOBDesktopChrome@42a311]" name="TearDown" is-config="true" duration-ms="1857" started-at="2018-11-05T18:30:00Z" finished-at="2018-11-05T18:30:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- TestMOBDesktopChrome -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
